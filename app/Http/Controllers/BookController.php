@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use Foobooks\Http\Requests;
 
+use Rych\Random\Random;
+
 class BookController extends Controller
 {
     /**
@@ -15,7 +17,7 @@ class BookController extends Controller
      */
     public function index()
     {
-        return 'Display all the books';
+        return view('book.index');
     }
 
     /**
@@ -25,7 +27,7 @@ class BookController extends Controller
      */
     public function create()
     {
-        //
+        return view('book.create');
     }
 
     /**
@@ -36,7 +38,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'Process adding new book: '.$_POST['title'];
     }
 
     /**
@@ -45,9 +47,10 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($title)
     {
         //
+        return view('book.show')->with('title', $title);
     }
 
     /**
@@ -56,9 +59,9 @@ class BookController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($title)
     {
-        //
+        return view('book.edit')->with('title', $title);
     }
 
     /**
