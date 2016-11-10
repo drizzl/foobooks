@@ -19,8 +19,8 @@ such as a page specific stylesheets.
 @section('content')
     <form method='POST' action='/books'>
         {{ csrf_field() }}
-        <input type='text' name='title'>
-        <input type='submit' value='Submit'>
+        Title: <input type='text' name='title'>
+        <input type='submit' value='Add New Book'>
     </form>
 @stop
 

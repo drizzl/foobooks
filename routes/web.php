@@ -25,6 +25,8 @@ Route::delete('/authors/{book}', 'AuthorController@destroy')->name('authors.dest
 
 Route::resource('tags', 'TagController');
 Route::resource('books', 'BookController');
+
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
 # View all books
 /*
 Route::get('/books', function() {
