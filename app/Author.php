@@ -1,6 +1,6 @@
 <?php
 
-namespace foobooks;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,7 +15,7 @@ class Author extends Model
     public function books() {
         # Author has many Books
         # Define a one-to-many relationship.
-        return $this->hasMany('foobooks\Book');
+        return $this->hasMany('App\Book');
     }
 
     /* End Relationship Methods */

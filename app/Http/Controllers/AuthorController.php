@@ -6,11 +6,11 @@
 * Note how it's not pre-populated with any action methods
 */
 
-namespace foobooks\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use foobooks\Http\Requests;
+use App\Http\Requests;
 
 class AuthorController extends Controller
 {

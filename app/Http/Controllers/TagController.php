@@ -6,11 +6,11 @@
 * Note how it's not pre-populated with all the resource methods (Index, Create, Store, Show, Edit, Update, Delete)
 */
 
-namespace foobooks\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use foobooks\Http\Requests;
+use App\Http\Requests;
 
 class TagController extends Controller
 {

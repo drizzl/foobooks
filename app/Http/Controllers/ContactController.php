@@ -1,10 +1,10 @@
 <?php
 
-namespace foobooks\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use foobooks\Http\Requests;
+use App\Http\Requests;
 
 class ContactController extends Controller
 {

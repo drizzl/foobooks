@@ -171,11 +171,11 @@ return [
         /*
          * Application Service Providers...
          */
-        foobooks\Providers\AppServiceProvider::class,
-        foobooks\Providers\AuthServiceProvider::class,
-        // foobooks\Providers\BroadcastServiceProvider::class,
-        foobooks\Providers\EventServiceProvider::class,
-        foobooks\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
         'Magyarjeti\LaravelLipsum\LipsumServiceProvider',

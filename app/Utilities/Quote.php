@@ -1,6 +1,6 @@
 <?php
 
-namespace foobooks\Utilities;
+namespace App\Utilities;
 
 class Quote {
 

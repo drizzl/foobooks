@@ -1,15 +1,15 @@
 <?php
 
-namespace foobooks\Http\Controllers;
+namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use foobooks\Http\Requests;
+use App\Http\Requests;
 use Rych\Random\Random;
-use foobooks\Utilities\Quote;
+use App\Utilities\Quote;
 use Carbon;
 use DB;
-use foobooks\Book;
-use foobooks\Author;
+use App\Book;
+use App\Author;
 
 # Access via /practice/#
 
