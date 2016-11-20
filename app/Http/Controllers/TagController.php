@@ -1,10 +1,16 @@
 <?php
 
-namespace Foobooks\Http\Controllers;
+/**
+* This controller was created via `php artisan make:controller Tag --resource`
+* It shows what a basic skeleton for a Resource controller looks like
+* Note how it's not pre-populated with all the resource methods (Index, Create, Store, Show, Edit, Update, Delete)
+*/
+
+namespace foobooks\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use Foobooks\Http\Requests;
+use foobooks\Http\Requests;
 
 class TagController extends Controller
 {

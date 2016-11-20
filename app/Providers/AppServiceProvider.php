@@ -1,6 +1,6 @@
 <?php
 
-namespace Foobooks\Providers;
+namespace foobooks\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

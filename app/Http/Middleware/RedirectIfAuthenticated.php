@@ -1,6 +1,6 @@
 <?php
 
-namespace Foobooks\Http\Middleware;
+namespace foobooks\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

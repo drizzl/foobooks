@@ -166,20 +166,19 @@ return [
         /*
          * Package Service Providers...
          */
-
-        //
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        Foobooks\Providers\AppServiceProvider::class,
-        Foobooks\Providers\AuthServiceProvider::class,
-        // Foobooks\Providers\BroadcastServiceProvider::class,
-        Foobooks\Providers\EventServiceProvider::class,
-        Foobooks\Providers\RouteServiceProvider::class,
+        foobooks\Providers\AppServiceProvider::class,
+        foobooks\Providers\AuthServiceProvider::class,
+        // foobooks\Providers\BroadcastServiceProvider::class,
+        foobooks\Providers\EventServiceProvider::class,
+        foobooks\Providers\RouteServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
-        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+        'Magyarjeti\LaravelLipsum\LipsumServiceProvider',
 
     ],
 
@@ -229,7 +228,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Debugbar' => 'Barryvdh\Debugbar\Facade',
         'Random' => 'Rych\Random\Random',
     ],
 

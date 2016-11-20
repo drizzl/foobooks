@@ -11,7 +11,7 @@
 |
 */
 
-$factory->define(Foobooks\User::class, function (Faker\Generator $faker) {
+$factory->define(foobooks\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [

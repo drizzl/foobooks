@@ -15,6 +15,9 @@ $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
 
+# SB: If you wanted to specify a different environment file to load from, you could do this:
+# $app->loadEnvironmentFrom('.env.testing');
+
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces
@@ -28,17 +31,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    Foobooks\Http\Kernel::class
+    foobooks\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    Foobooks\Console\Kernel::class
+    foobooks\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    Foobooks\Exceptions\Handler::class
+    foobooks\Exceptions\Handler::class
 );
 
 /*
