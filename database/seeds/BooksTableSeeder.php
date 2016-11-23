@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Author;
+use Foobooks\Author;
 
 class BooksTableSeeder extends Seeder
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Foobooks;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,7 @@ class Tag extends Model
 	*/
     public function books()
     {
-        return $this->belongsToMany('App\Book')->withTimestamps();
+        return $this->belongsToMany('Foobooks\Book')->withTimestamps();
     }
 
     /* End Relationship Methods */

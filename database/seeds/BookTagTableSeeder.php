@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
-use App\Book;
-use App\Tag;
+use Foobooks\Book;
+use Foobooks\Tag;
 
 class BookTagTableSeeder extends Seeder
 {

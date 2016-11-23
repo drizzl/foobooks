@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Foobooks;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,7 +14,7 @@ class Book extends Model
     public function author() {
         # Book belongs to Author
         # Define an inverse one-to-many relationship.
-        return $this->belongsTo('App\Author');
+        return $this->belongsTo('Foobooks\Author');
     }
 
     /**
@@ -23,7 +23,7 @@ class Book extends Model
     public function tags()
     {
         # With timetsamps() will ensure the pivot table has its created_at/updated_at fields automatically maintained
-        return $this->belongsToMany('App\Tag')->withTimestamps();
+        return $this->belongsToMany('Foobooks\Tag')->withTimestamps();
     }
 
     /* End Relationship Methods */

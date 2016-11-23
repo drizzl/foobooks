@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Foobooks\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Book;
-use App\Tag;
-use App\Author;
+use Foobooks\Http\Requests;
+use Foobooks\Book;
+use Foobooks\Tag;
+use Foobooks\Author;
 use Session;
 
 class BookController extends Controller
